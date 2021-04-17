@@ -13,17 +13,92 @@
 <body>
     <!-- 漢堡選單區 ------------------->
     <input type="checkbox" id="check" style="display: none;">
-    <div class="sidebar">
-        <label for="check"><i class="fas fa-bars"></i></label>
+    <div class="sidebar">    
+        <!-- logo 和按鈕區 -->
+        <ul>
+            <li class="first">
+                <div class="btn">
+                    <label for="check"><i class="fas fa-bars"></i></label>
+                </div>
+                <div class="logo">
+                    <img src="./images/youtube_logo.png" alt="yt_logo">
+                </div>
+            </li><hr>
+            <!-- 首頁、探索、訂閱內容 -->
+            <li class="second">
+                <p>首頁</p>
+                <p>探索</p>
+                <p>訂閱內容</p>
+            </li><hr>
+            <!-- 媒體櫃、觀看紀錄 -->
+            <li class="third">
+                <p>媒體庫</p>
+                <p>觀看紀錄</p>
+                <p>你的影片</p>
+                <p>稍後觀看</p>
+                <p>Korean</p>
+                <p>顯示更多</p>
+            </li><hr>
+            <!-- 訂閱內容 -->
+            <li class="forth">
+                <p>訂閱內容</p>
+                <p><img src="./images/toadyNews.png" alt="TODAY 看世界" style="width:240px; height: 40px; margin-left: -16px;"></p>
+                <p><img src="./images/77channel.png" alt="志祺七七" style="width:240px; height: 40px; margin-left: -16px;"></p>
+                <p><img src="./images/許伯簡芝.png" alt="許伯簡芝" style="width:240px; height: 40px; margin-left: -16px;"></p>
+                <p><img src="./images/piano.png" alt="Theishter Piano" style="width:240px; height: 40px; margin-left: -16px;"></p>
+                <p><img src="./images/公視新聞實驗室.png" alt="公視新聞實驗室" style="width:240px; height: 40px; margin-left: -16px;"></p>
+                <p><img src="./images/看電影了沒.png" alt="看電影了沒" style="width:240px; height: 40px; margin-left: -16px;"></p>
+                <p><img src="./images/酷l.png" alt="酷的夢" style="width:240px; height: 40px; margin-left: -16px;"></p>
+                <p>顯示另外 84 個項目</p>
+            </li><hr>
+            <!-- 更多功能 -->
+            <li class="fifth">
+                <p>更多 YOUTUBE 功能</p>
+                <p>Youtube Premium</p>
+                <p>遊戲</p>
+                <p>直播</p>
+                <p>體育</p>
+            </li><hr>
+            <!-- 設定 -->
+            <li class="sixth">
+                <p>設定</p>
+                <p>檢舉記錄</p>
+                <p>說明</p>
+                <p>提供意見</p>
+            </li><hr>
+            <!-- 版權聲明 -->
+            <li class="seventh">
+                <p>
+                    <a href="">簡介</a>
+                    <a href="">媒體</a>
+                    <a href="">版權</a>
+                    <a href="">與我們聯絡</a>
+                    <a href="">創作者</a>
+                    <a href="">廣告</a>
+                    <a href="">開發人員</a>
+                </p>
+                <p>
+                    <a href="">條款</a>
+                    <a href="">隱私權</a>
+                    <a href="">政策與安全性</a>
+                    <a href="">Youtube 運作方式</a>
+                    <a href="">測試新功能</a>
+                </p>
+                <p>&copy;2021 Google LLC</p>
+            </li>
+        </ul>
     </div>
 
     <section id="header">
         <!-- 左 --------------->
         <div id="header_left">
             <!-- 側欄選單伸縮按鈕 -->
-            <div class="btn"></div>
+            <div class="btn">
+                <input type="checkbox" id="check" style="display: none;">
+                <label for="check"><i class="fas fa-bars"></i></label>
+            </div>
             <!-- logo -->
-            <div class="ytLogo"></div>
+            <div class="logo"></div>
         </div>
 
         <!-- 中 ----------------->
