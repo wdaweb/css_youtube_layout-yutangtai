@@ -95,7 +95,7 @@ body{
     background: salmon;
 }
 #main #main_video{
-    display: inline-block;
+    float: right;
     /* 打開側欄後的寬 */
     width: calc(100% - 240px);
     /* 關掉側欄後的寬 */
