@@ -10,6 +10,12 @@
 </head>
 
 <body>
+    <!-- 漢堡選單區 ------------------->
+    <input type="checkbox" id="check" style="display: none;">
+    <div class="sidebar">
+        <label for="check"><i class="fas fa-bars"></i></label>
+    </div>
+
     <section id="header">
         <!-- 左 --------------->
         <div id="header_left">
@@ -45,9 +51,7 @@
 
     <section id="main">
         <!-- 左側選單 --------------->
-        <div id="main_sidebox">
-            <!-- 漢堡按鈕 -->
-            <label for="check">></label>
+        <div id="main_left">            
             <!-- 首頁 icon -->
             <div class="home_icon"></div>
             <!-- 探索 icon -->
@@ -58,13 +62,14 @@
             <div class="media_icon"></div>
         </div>
         <!-- 影片區 ----------------->
-        <div id="main_video">
+        <div id="main_right">
             <div class="video"></div>
             <div class="video"></div>
             <div class="video"></div>
             <div class="video"></div>
         </div>
     </section>
+
 </body>
 
 </html>
