@@ -12,63 +12,74 @@
 
 <body>
     <!-- 漢堡選單區 ------------------->
-    <input type="checkbox" id="check" style="display: none;">
+    
     <div class="sidebar">    
-        <!-- logo 和按鈕區 -->
         <ul>
-            <li class="first">
+            <!-- logo 和按鈕區 -->
+            <li class="hamburger">
                 <div class="btn">
+                    <input type="checkbox" id="check" style="display: none;">
                     <label for="check"><i class="fas fa-bars"></i></label>
                 </div>
                 <div class="logo">
-                    <img src="./images/youtube_logo.png" alt="yt_logo">
+                    <img src="./images/youtube_logo.png" alt="yt_logo" style="height: 33px; width: auto;">
                 </div>
             </li><hr>
             <!-- 首頁、探索、訂閱內容 -->
-            <li class="second">
-                <p>首頁</p>
-                <p>探索</p>
-                <p>訂閱內容</p>
+            <li class="list">
+                <ul>
+                    <li><p>&emsp;<i class="fas fa-home" style="color: rgb(255 0 0);"></i>&emsp;首頁</p></li>               
+                    <li><p>&emsp;<i class="fas fa-compass"></i>&emsp;探索</p></li>
+                    <li><p>&emsp;<i class="fas fa-box-open"></i>&emsp;訂閱內容</p></li>
+                </ul>
             </li><hr>
             <!-- 媒體櫃、觀看紀錄 -->
-            <li class="third">
-                <p>媒體庫</p>
-                <p>觀看紀錄</p>
-                <p>你的影片</p>
-                <p>稍後觀看</p>
-                <p>Korean</p>
-                <p>顯示更多</p>
+            <li class="list">
+                <ul>
+                    <li><p>&emsp;<i class="fas fa-play-circle"></i>&emsp;媒體庫</p></li>
+                    <li><p>&emsp;<i class="fas fa-history"></i>&emsp;觀看紀錄</p></li>
+                    <li><p>&emsp;<i class="fas fa-audio-description"></i>&emsp;你的影片</p></li>
+                    <li><p>&emsp;<i class="fas fa-clock"></i>&emsp;稍後觀看</p></li>
+                    <li><p>&emsp;<i class="fas fa-list"></i>&emsp;Korean</p></li>
+                    <li><p>&emsp;<i class="fas fa-chevron-down"></i>&emsp;顯示更多</p></li>
+                </ul>
             </li><hr>
             <!-- 訂閱內容 -->
-            <li class="forth">
-                <p>訂閱內容</p>
-                <p><img src="./images/toadyNews.png" alt="TODAY 看世界"></p>
-                <p><img src="./images/77channel.png" alt="志祺七七"></p>
-                <p><img src="./images/許伯簡芝.png" alt="許伯簡芝"></p>
-                <p><img src="./images/piano.png" alt="Theishter Piano"></p>
-                <p><img src="./images/公視新聞實驗室.png" alt="公視新聞實驗室"></p>
-                <p><img src="./images/看電影了沒.png" alt="看電影了沒"></p>
-                <p><img src="./images/酷l.png" alt="酷的夢"></p>
-                <p>顯示另外 84 個項目</p>
+            <li class="list">
+                <ul style="position: relative;">
+                    <p>&emsp;訂閱內容</p>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCmMnzrvnsSnv-0u9M1Rxiqw"><img src="https://yt3.ggpht.com/ytc/AAUvwniSnrTpU6FDgBwrZ2EBSS4lskgf6KUhxdQNVXkN=s88-c-k-c0x00ffffff-no-rj" alt="TODAY 看世界" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 49px;">&emsp;TODAY 看世界</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCiWXd0nmBjlKROwzMyPV-Nw"><img src="https://yt3.ggpht.com/ytc/AAUvwnjTuMUGrd5ilsoavl8lqLHwv5cO_cv-2H1tEcsG=s88-c-k-c0x00ffffff-no-rj" alt="志祺七七 " style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 90px;">&emsp;志祺七七 X 圖文不符</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UClEzBxwGGFrbwTVeawscqjQ"><img src="https://yt3.ggpht.com/ytc/AAUvwniCo8j1DlLzkPDvir_E71d8TSl-lIyKRnrBxsn0XQ=s88-c-k-c0x00ffffff-no-rj" alt="許伯簡芝" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 133px;">&emsp;許伯&簡芝—倉鼠人</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCBShw5O9wwBt9G59xuESZYg"><img src="https://yt3.ggpht.com/ytc/AAUvwniYHJtuXKV1N43LsCNQC7w9irQi3H3_RD4kjggy4w=s88-c-k-c0x00ffffff-no-rj" alt="Theishter Piano" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 174px;">&emsp;Theishter - Anime on...</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCMDcOT4z7GS1SRGG2g7z43g"><img src="https://yt3.ggpht.com/ytc/AAUvwnjc0yaTFGB60DDTAhKhkWorghrqSgQahCFKl4_htQ=s88-c-k-c0x00ffffff-no-rj" alt="公視新聞實驗室" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 215px;">&emsp;公視P#新聞實驗室</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCZmyD8-UsaxaVL-Zx3KEQKw"><img src="https://yt3.ggpht.com/ytc/AAUvwnhj9BZK1bRUWMiQ4FO8lyAWD4ichQgEAI8rLbMn=s88-c-k-c0x00ffffff-no-rj" alt="看電影了沒" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 257px;">&emsp;看电影了没</a></li>
+                    <li>&emsp;<a href="https://www.youtube.com/channel/UCV1OpUwWJCMiv6gJCRR6yAg"><img src="https://yt3.ggpht.com/ytc/AAUvwnjgb0xtMOj6ol8mAzG6NO4_hP4q2cVL1taBSBwf4w=s88-c-k-c0x00ffffff-no-rj" alt="酷的夢" style="height: 24px; width: auto; border-radius: 50%; position: absolute; top: 298px;">&emsp;Ku's dream酷的夢-</a></li>
+                    <li>&emsp;<a href="">&emsp;<i class="fas fa-chevron-down"></i>&emsp;顯示另外 84 個項目</a></li>
+                </ul>
             </li><hr>
             <!-- 更多功能 -->
-            <li class="fifth">
-                <p>更多 YOUTUBE 功能</p>
-                <p>Youtube Premium</p>
-                <p>遊戲</p>
-                <p>直播</p>
-                <p>體育</p>
+            <li class="list">
+                <ul>
+                    <p>&emsp;更多 YOUTUBE 功能</p>
+                    <li><p>&emsp;<i class="fab fa-youtube"></i>&emsp;Youtube Premium</p></li>
+                    <li><p>&emsp;<i class="fas fa-gamepad"></i>&emsp;遊戲</p></li>
+                    <li><p>&emsp;<i class="fas fa-podcast"></i>&emsp;直播</p></li>
+                    <li><p>&emsp;<i class="fas fa-trophy"></i>&emsp;體育</p></li>
+                </ul>                
             </li><hr>
             <!-- 設定 -->
-            <li class="sixth">
-                <p>設定</p>
-                <p>檢舉記錄</p>
-                <p>說明</p>
-                <p>提供意見</p>
+            <li class="list">
+                <ul>
+                    <li><p>&emsp;<i class="fas fa-cog"></i>&emsp;設定</p></li>
+                    <li><p>&emsp;<i class="fas fa-flag"></i>&emsp;檢舉記錄</p></li>
+                    <li><p>&emsp;<i class="fas fa-question-circle"></i>&emsp;說明</p></li>
+                    <li><p>&emsp;<i class="fas fa-comment-dots"></i>&emsp;提供意見</p></li>
+                </ul>                
             </li><hr>
             <!-- 版權聲明 -->
-            <li class="seventh">
-                <p>
+            <li class="list">
+                <p class="detail">
                     <a href="">簡介</a>
                     <a href="">媒體</a>
                     <a href="">版權</a>
@@ -77,14 +88,14 @@
                     <a href="">廣告</a>
                     <a href="">開發人員</a>
                 </p>
-                <p>
+                <p class="detail">
                     <a href="">條款</a>
                     <a href="">隱私權</a>
                     <a href="">政策與安全性</a>
                     <a href="">Youtube 運作方式</a>
                     <a href="">測試新功能</a>
                 </p>
-                <p>&copy;2021 Google LLC</p>
+                <p class="detail">&copy;2021 Google LLC</p>
             </li>
         </ul>
     </div>
