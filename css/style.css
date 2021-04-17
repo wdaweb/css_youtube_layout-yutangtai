@@ -83,23 +83,49 @@ body{
 #main{
     width: 100%;
     height: calc(100% - 56px);
-    background: powderblue;
 }
-#main #main_sidebox{
-    display: inline-block;
-    /* 打開漢堡選單後的寬 */
-    width: 240px;
-    /* 關掉漢堡選單後的寬 */
-    width: 72px; 
+#main #main_left{
+    float: left;
+    /* 打開漢堡選單後的寬 240px */
+    width: 72px;
+    /* 關掉漢堡選單後的寬為 72px */
     height: 100%;
     background: salmon;
 }
-#main #main_video{
+#main #main_right{
     float: right;
-    /* 打開側欄後的寬 */
-    width: calc(100% - 240px);
-    /* 關掉側欄後的寬 */
+    /* 打開側欄後的寬 calc(100% - 240px)*/
+    /* 關掉側欄後的寬為 calc(100% - 72px) */
     width: calc(100% - 72px);
     height: 100%;
     background: seagreen;
+}
+
+
+/* sidebar---------------------- */
+.sidebar{
+    display: inline-block;
+
+    width: 240px;
+    height: 100%;
+    background: skyblue;
+
+    /* margin-left: -168px; */
+
+    position: relative;
+}
+.sidebar label{
+    width: 24px;
+    height: 24px;
+    background: ;
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+
+
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
