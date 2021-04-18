@@ -52,68 +52,19 @@ table {
 body{
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
 hr{
     margin: 0;
 }
-/* #header-------------------- */
-#header{
-    width: 100%;
-    height: 56px;
-    background: pink;
-}
-#header #header_left{
-    float: left;
-    width: 20%;
-    height: 100%;
-    background: royalblue;
-}
-#header #header_middle{
-    float: left;
-    width: 60%;
-    height: 100%;
-    background: yellowgreen;
-}
-#header #header_right{
-    float: right;
-    width: 20%;
-    height: 100%;
-    background: rosybrown;
-}
-
-
-
-/* #main------------------------- */
-#main{
-    width: 100%;
-    height: calc(100% - 56px);
-}
-#main #main_left{
-    float: left;
-    /* 打開漢堡選單後的寬 240px */
-    width: 72px;
-    /* 關掉漢堡選單後的寬為 72px */
-    height: 100%;
-    background: salmon;
-}
-#main #main_right{
-    float: right;
-    /* 打開側欄後的寬 calc(100% - 240px)*/
-    /* 關掉側欄後的寬為 calc(100% - 72px) */
-    width: calc(100% - 72px);
-    height: 100%;
-    background: seagreen;
-}
-
 
 /* sidebar---------------------- */
 .sidebar{
     display: inline-block;
-    /* font-size: 0; */
 
     width: 240px;
     height: 100%;
-    overflow: auto;
+    overflow-x: hidden;
     background: skyblue;
 
     margin-left: -240px;
@@ -123,30 +74,28 @@ hr{
     z-index: 1;
 }
 .hamburger{
-    height: 57px;
-    text-align: center;
+    font-size: 0;
+    width: 240px;
+    height: 56px;
     position: relative;
-    padding-right: 0;
-    padding-left: 16px;
 }
 .hamburger .btn{
-    position: absolute;
-    
-    line-height: 57px;
-}
-.btn label{
-    font-size: 22px;
-    color: grey;
+    display: inline-block;
+    width: 72px;
+    height: 56px;
+    position: relative;
 }
 .hamburger .logo{
-    position: absolute;
-    top: 10px;
-    left: 40px;
+    display: inline-block;
+    width: 153px;
+    height: 56px;
+    background: slateblue;
+    position: relative;
 }
-
 input:checked+.sidebar{
     margin-left: 0;
 }
+
 
 
 .list{
@@ -168,3 +117,157 @@ input:checked+.sidebar{
     padding-right: 16px;
     margin-bottom: 16px;
 }
+
+
+/* #content------------------- */
+#content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* #header-------------------- */
+#header{
+    width: 100%;
+    height: 56px;
+    font-size: 0;
+    background: yellow;
+    position: fixed;
+}
+/* #header_left--------*/
+#header_left{
+    float: left;
+    width: 240px;
+    height: 56px;
+}
+#header_left .btn{
+    display: inline-block;
+    width: 72px;
+    height: 56px;
+    background: palevioletred;
+    
+    position: relative;
+}
+.btn label{
+    font-size: 22px;
+    color: grey;
+    line-height: 40px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#header_left .logo{
+    display: inline-block;
+    width: 168px;
+    height: 56px;
+    background: royalblue;
+    position: relative;
+}
+.logo img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* #header_middle-------*/
+#header_middle{
+    display: inline-block;
+    width: calc(100%-440px); /*為何包不進去?QQ*/
+    height: 56px;
+    position: relative;
+}
+#searchBlank{
+    height: 56px;    
+    background: lightpink;
+}
+#searchBlank input{  
+    width: 20em;
+    height: 56px;
+    padding: 2px 6px;
+    margin: 10px auto;
+}
+#searchBlank button{
+    width: 65px;
+    height: 33px;
+    padding: 1px 6px;
+    margin-top: 10px;
+    position: absolute;
+}
+#searchBlank .micro{
+    width: auto;
+    height: 40px;
+    padding: 8px;
+    background: lightgreen;
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+}
+
+/* #header_right--------*/
+#header_right{
+    float: right;
+    width: 200px;
+    height: 56px;
+    padding-left: 8px;
+    background: rgb(205, 50, 153);
+}
+#header_right #iconList li{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 8px;
+    background: rgb(178, 176, 199);
+}
+#iconList a{
+    position: absolute;
+    right: 16px;
+    top: 13px;
+
+}
+.icon{
+    font-size: 20px;
+}
+
+
+
+/* #main------------------------- */
+#main{
+    width: 100%;
+    height: calc(100% - 56px);
+    position: absolute;
+    top: 56px;
+}
+#main #main_left{
+    float: left;
+    width: 72px;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+
+    background: salmon;
+}
+.main_icon{
+    width: 72px;
+    height: 72px;
+    background: rgb(154, 143, 224);
+    padding: 16px 0 14px 0;
+}
+.main_icon:hover{
+    background: grey;
+}
+.main_icon a{
+    display: block;
+    text-decoration: none;
+    
+}
+
+#main #main_right{
+    float: right;
+    width: calc(100% - 72px);
+    background: seagreen;
+}
+
+

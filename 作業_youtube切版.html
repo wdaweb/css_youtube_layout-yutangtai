@@ -21,7 +21,7 @@
                     <label for="toogle"><i class="fas fa-bars exit"></i></label>
                 </div>
                 <div class="logo">
-                    <img src="./images/youtube_logo.png" alt="yt_logo" style="height: 33px; width: auto;">
+                    <img src="./images/youtube_logo.png" alt="yt_logo" style="height: 32px; width: auto;">
                 </div>
             </li><hr>
             <!-- 首頁、探索、訂閱內容 -->
@@ -99,62 +99,88 @@
         </ul>
     </div>
 
-    <section id="header">
-        <!-- 左 --------------->
-        <div id="header_left">
-            <!-- 側欄選單伸縮按鈕 -->
-            <div class="btn">
-                <label for="toogle"><i class="fas fa-bars exit"></i></label>
+    <!-- 關掉漢堡選單後的頁面 --------------------------------------------------->
+    <div id="content">
+        <section id="header">
+            <ul>
+                <!-- 左 --------------->
+                <li id="header_left">                                           
+                    <!-- 側欄選單伸縮按鈕 -->
+                    <p class="btn">
+                        <label for="toogle"><i class="fas fa-bars exit"></i></label>
+                    </p>
+                    <!-- logo -->
+                    <p class="logo">
+                        <img src="./images/youtube_logo.png" alt="logo" style="height: 32px; width: auto;">
+                    </p>         
+                </li>
+                <!--中----------------->
+                <li id="header_middle">
+                    <div id="searchBlank">                        
+                        <!-- 搜尋欄 -->
+                        <input type="text" placeholder="搜尋" style="outline: none; height: 26px;">
+                        <button><i class='fas fa-search icon'></i></button>
+                        <!-- 麥克風 -->                            
+                        <a href="" class="micro"><i class="fas fa-microphone icon"></i></a>
+                    </div>
+                </li>
+                <!--右----------------->
+                <li id="header_right">
+                    <div id="iconList">
+                        <div class="right_icon">
+                            <ul>
+                                <!-- 錄影 icon -->
+                                <li class="record">
+                                    <i class="fas fa-video icon"></i>
+                                </li>
+                                <!-- 選單 icon -->
+                                <li class="menu">
+                                    <i class="fas fa-th icon"></i>
+                                </li>
+                                <!-- 鈴鐺 icon -->
+                                <li class="bell">
+                                    <i class="fas fa-bell icon"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 頭貼  -->                        
+                        <a href=""><img src="./images/mary.jpg" alt="profile" style="height: 32px; width: auto; border-radius: 50%;"></a>
+                    </div>
+                </li>            
+            </ul>
+        </section>
+
+        <section id="main">
+            <!-- 左側選單 --------------->
+            <div id="main_left">            
+                <!-- 首頁 icon -->
+                <ul>
+                    <li class="main_icon">
+                        <a href="" alt="首頁"><i class="fas fa-home" style="color: rgb(255 0 0);"></i><br>首頁</a>
+                    </li>
+                    <!-- 探索 icon -->
+                    <li class="main_icon">
+                        <a href="" alt="探索"><i class="fas fa-compass"></i><br>探索</a>
+                    </li>
+                    <!-- 訂閱內容 icon -->
+                    <li class="main_icon">
+                        <a href="" alt="訂閱"><i class="fas fa-box-open"></i><br>訂閱內容</a>
+                    </li>
+                    <!-- 媒體庫 icon -->
+                    <li class="main_icon">
+                        <a href="" alt="媒體庫"><i class="fas fa-play-circle"></i><br>媒體庫</a>
+                    </li>
+                </ul>
             </div>
-            <!-- logo -->
-            <div class="logo"></div>
-        </div>
-
-        <!-- 中 ----------------->
-        <div id="header_middle">
-            <!-- 搜尋欄 -->
-            <div class="search">
-                <input type="text" value="搜尋">
-                <input type="button" value="">
+            <!-- 影片區 ----------------->
+            <div id="main_right">
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
+                <div class="video"></div>
             </div>
-            <!-- 麥克風 -->
-            <div class="micro"></div>
-        </div>
-
-        <!-- 右 ------------------>
-        <div id="header_right">
-            <!-- 錄影 icon -->
-            <div class="icon_radio"></div>
-            <!-- 選單 icon -->
-            <div class="icon_square"></div>
-            <!-- 鈴鐺 icon -->
-            <div class="icon_bell"></div>
-            <!-- 頭貼  -->
-            <div class="profileImg"></div>
-        </div>        
-    </section>
-
-    <section id="main">
-        <!-- 左側選單 --------------->
-        <div id="main_left">            
-            <!-- 首頁 icon -->
-            <div class="home_icon"></div>
-            <!-- 探索 icon -->
-            <div class="compass_icon"></div>
-            <!-- 訂閱內容 icon -->
-            <div class="subscribe_icon"></div>
-            <!-- 媒體庫 icon -->
-            <div class="media_icon"></div>
-        </div>
-        <!-- 影片區 ----------------->
-        <div id="main_right">
-            <div class="video"></div>
-            <div class="video"></div>
-            <div class="video"></div>
-            <div class="video"></div>
-        </div>
-    </section>
-
+        </section>
+    </div>
 </body>
 
 </html>
