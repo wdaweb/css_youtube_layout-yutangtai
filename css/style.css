@@ -252,16 +252,16 @@ input:checked+.sidebar{
 .main_icon{
     width: 72px;
     height: 72px;
-    background: rgb(154, 143, 224);
     padding: 16px 0 14px 0;
 }
 .main_icon:hover{
-    background: grey;
+    background: rgba(128, 128, 128, 0.377);
 }
 .main_icon a{
     display: block;
     text-decoration: none;
-    
+    font-size: 20px;
+    color: rgb(80, 76, 76);
 }
 
 #main #main_right{
