@@ -21,6 +21,7 @@ time, mark, audio, video {
 	border: 0;
     box-sizing: border-box;
 	font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -115,9 +116,11 @@ hr{
     overflow: auto;
     background: skyblue;
 
-    /* margin-left: -168px; */
+    margin-left: -240px;
 
     position: relative;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
 }
 .hamburger{
     height: 57px;
@@ -137,10 +140,8 @@ hr{
 }
 .hamburger .logo{
     position: absolute;
-    
     top: 10px;
     left: 40px;
-    /* display: none; */
 }
 
 input:checked+.sidebar{
@@ -152,14 +153,10 @@ input:checked+.sidebar{
     line-height: 40px;
     padding-top: 12px;
     padding-bottom: 16px;
-    /* padding: 12px 16px 12px; */
-    
-    
 }
 .list li:hover{
     background: grey;
 }
-
 .list a{
     text-decoration: none;
     font-size: 13px;
